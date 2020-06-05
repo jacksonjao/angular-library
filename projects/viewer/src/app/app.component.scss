@@ -1,0 +1,19 @@
+@import "styles/index.scss";
+
+ul {
+  list-style: none;
+  margin-top: $medium-space;
+}
+
+
+span {
+  color: coral;
+
+  &:last-of-type {
+    color: green;
+
+  }
+}
+
+
+
