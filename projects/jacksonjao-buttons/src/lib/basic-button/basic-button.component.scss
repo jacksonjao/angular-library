@@ -1,0 +1,15 @@
+@import "../../../../../styles/index";
+
+button {
+  text-decoration: none;
+  border: none;
+  color: white;
+  background: $blue-color;
+  padding: $small-space;
+  border-radius: $button-radius;
+
+  &:hover {
+    cursor: pointer;
+    filter: brightness(0.8);
+  }
+}

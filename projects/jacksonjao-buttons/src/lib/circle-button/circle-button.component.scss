@@ -1,0 +1,18 @@
+@import "../../../../../styles/index";
+
+button {
+  text-decoration: none;
+  color: white;
+  height: 3rem;
+  width: 3rem;
+  background-size: cover;
+  background: $blue-color cover center;
+  padding: $small-space;
+  border-radius: 50%;
+  border: 0.125rem solid $blue-color;
+
+  &:hover {
+    cursor: pointer;
+    filter: brightness(0.8);
+  }
+}
