@@ -1,27 +1,31 @@
-# Librerias
+# jacksonjaoButtons
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.26.
+Button library, a standard basic button and a circular button with a background image or icon.
 
-## Development server
+This library has a directive called libColor. If you wanna know more about this library go to
+[Jacksonjao library](http://jacksonjao.github.io/portfolio/library/) 
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Installation
 
-## Code scaffolding
+Use the package manager [npm](https://www.npmjs.com/) to install jacksonjaoButtons.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+```bash
+npm i jacksonjao-buttons
+```
 
-## Build
+## Usage
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+```html
+<lib-basic-button title="Botón" (action)="buttonAction($event)"></lib-basic-button>
 
-## Running unit tests
+<lib-circle-button [image]="'image'" (action)="buttonAction($event)"></lib-circle-button>
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```typescript
+import {JacksonjaoButtonsModule} from './jacksonjao-buttons.module'; 
 
-## Running end-to-end tests
+[JacksonjaoButtonsModule]
+```
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
