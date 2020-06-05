@@ -1,32 +1,90 @@
-<h1>Librería</h1>
-<br>
-<hr>
-<section class="components">
-  <section class="lib-company-button">
-    <code>
-      <ul>
-        <h4>Nombre del componente</h4>
-        <li>
-          lib-company-button
-        </li>
-      </ul>
-      <ul>
+<section class="container">
+  <section class="components">
+    <h1>Botones</h1>
+    <hr>
+    <section>
+      <code>
+        <ul>
+          <h4>Nombre del componente</h4>
+          <li>
+            lib-basic-button
+          </li>
+        </ul>
+        <ul>
 
-        <h4>Propiedades del componente</h4>
-        <li>
-          <span>[title]</span>="<span>string</span>"
-        </li>
-        <li>
-          <span>[link]</span>="<span>string</span>"
-        </li>
-        <li>
-          <span>[isExternal]</span>="<span>boolean</span>"
-        </li>
-      </ul>
-      <br>
-      <lib-company-button [title]="'My portfolio'" [isExternal]="true"
-                          [link]="'https://jacksonjao.github.io/'"></lib-company-button>
-    </code>
+          <h4>Propiedades del componente</h4>
+          <li>
+            <span>[title]</span>="<span>string</span>"
+          </li>
+          <li>
+            <span>(action)</span>="<span>function</span>"
+          </li>
+        </ul>
+        <br>
+        <lib-basic-button title="Botón" (action)="buttonAction($event)"></lib-basic-button>
+      </code>
+    </section>
+    <hr>
+    <section>
+      <code>
+        <ul>
+          <h4>Nombre del componente</h4>
+          <li>
+            lib-circle-button
+          </li>
+        </ul>
+        <ul>
+
+          <h4>Propiedades del componente</h4>
+          <li>
+            <span>[image]</span>="<span>string</span>"
+          </li>
+          <li>
+            <span>(action)</span>="<span>function</span>"
+          </li>
+        </ul>
+        <br>
+        <lib-circle-button libColor
+                           [image]="'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcScwbN4eJu455NBc2GR46BFflcHEv-N_oQBBpuheVEeykwHhX8Z&usqp=CAU'"
+                           (action)="buttonAction($event)"></lib-circle-button>
+      </code>
+    </section>
+
   </section>
 
+
+  <section class="components">
+    <h1>Directivas</h1>
+    <hr>
+    <section>
+      <code>
+        <ul>
+          <h4>Nombre de la directiva</h4>
+          <li>
+            libColor
+          </li>
+        </ul>
+        <ul>
+
+          <h4>Propiedades de la directiva</h4>
+          <li>
+            <span>[color]</span>="<span>string</span>"
+          </li>
+          <li>
+            <span>(fontColor)</span>="<span>string</span>"
+          </li>
+        </ul>
+        <br>
+        <lib-basic-button libColor color="purple" fontColor="yellow" title="Botón"
+                          (action)="buttonAction($event)"></lib-basic-button>
+        <br>
+        <br>
+        <lib-circle-button libColor color="yellow"
+                           [image]="'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcScwbN4eJu455NBc2GR46BFflcHEv-N_oQBBpuheVEeykwHhX8Z&usqp=CAU'"
+                           (action)="buttonAction($event)"></lib-circle-button>
+
+      </code>
+    </section>
+
+  </section>
 </section>

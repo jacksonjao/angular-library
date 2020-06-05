@@ -19,11 +19,11 @@
       "dom"
     ],
     "paths": {
-      "company-button": [
-        "dist/company-button"
+      "jacksonjao-buttons": [
+        "dist/jacksonjao-buttons"
       ],
-      "company-button/*": [
-        "dist/company-button/*"
+      "jacksonjao-buttons/*": [
+        "dist/jacksonjao-buttons/*"
       ]
     }
   },

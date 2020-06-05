@@ -2,7 +2,7 @@ import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
 
 import {AppComponent} from './app.component';
-import {CompanyButtonModule} from '../../../company-button/src/lib/company-button.module';
+import {JacksonjaoButtonsModule} from '../../../jacksonjao-buttons/src/lib/jacksonjao-buttons.module';
 
 @NgModule({
   declarations: [
@@ -10,7 +10,7 @@ import {CompanyButtonModule} from '../../../company-button/src/lib/company-butto
   ],
   imports: [
     BrowserModule,
-    CompanyButtonModule,
+    JacksonjaoButtonsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
